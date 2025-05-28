@@ -11,28 +11,26 @@
 	const skillset = [
 		{
 			image: ImagePlaceholder,
-			text: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-			title: 'Product design',
+			text: 'This is a system for churces to digitally organize records for announcements,thanksgivings and church transfers, simplifying tasks for church secretaries, enhancing communication within the church community.',
+			title: 'Announcement Management System',
+			link: "https://atp-frontend.onrender.com/ "
 
 		},
 		{
 			image: ImagePlaceholder,
-			text: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-			title: 'Art direction',
+			text: 'This is a web scraper to extract data from Amazon based on user-selected categories and departments, presenting products to enhance the shopping experience by providing a curated list of items.',
+			title: 'Scrapitos',
+			link: "https://github.com/Yaa-Henewaa/scrapitos "
 
 		},
 		{
 			image: ImagePlaceholder,
-			text: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-			title: 'Visual design',
+			text: 'This is a reusable image upload service using RabbitMQ and Cloudinary, designed to handle image uploads efficiently and securely, providing a reliable solution for applications requiring image storage and retrieval.',
+			title: 'Image-Upload Service ',
+			link: "https://github.com/Yaa-Henewaa/Image-Upload-Service"
 
 		},
-		{
-			image: ImagePlaceholder,
-			text: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-			title: 'Visual design',
 
-		},
 
 
 
@@ -41,7 +39,7 @@
 
 <div class="h-full w-full ">
     <div class="p-5 mb-12">
-		<div class="m-12 ">
+		<div class="px-4 py-2">
 			<div class="flex justify-center text-3xl font-semibold text-[#FF64B4] mt-5 mb-[5rem] ">Projects</div>
 			<div class="m-12 grid grid-cols-3 gap-12">
 				{#each skillset as skills}
@@ -50,6 +48,7 @@
 						image: skills.image,
 						title: skills.title,
 						text: skills.text,
+						link: skills.link
 				  
 					}}
 				/>
