@@ -37,35 +37,37 @@
 	];
 </script>
 
-<div class="h-full w-full ">
-    <div class="p-5 mb-12">
-		<div class="px-4 py-2">
-			<div class="flex justify-center text-3xl font-semibold text-[#FF64B4] mt-5 mb-[5rem] ">Projects</div>
-			<div class="m-12 grid grid-cols-3 gap-12">
-				{#each skillset as skills}
-				<Card
-					CardData={{
-						image: skills.image,
-						title: skills.title,
-						text: skills.text,
-						link: skills.link
-				  
-					}}
-				/>
-			{/each}
-	
-			</div>
-		</div>
-
+<div class="h-full w-full">
+    <div class="p-4 sm:p-5 mb-8 sm:mb-12">
+        <div class="px-4 mt-4">
+            <div class="flex justify-center text-2xl sm:text-3xl font-semibold text-[#FF64B4] mt-4 sm:mt-5 mb-6 sm:mb-[5rem]">
+                Projects
+            </div>
+            
+            <!-- Changed grid to be responsive -->
+            <div class="mx-4 sm:m-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
+                {#each skillset as skills}
+                    <Card
+                        CardData={{
+                            image: skills.image,
+                            title: skills.title,
+                            text: skills.text,
+                            link: skills.link
+                        }}
+                    />
+                {/each}
+            </div>
+        </div>
     </div>
-    <div class="flex h-20">
-		<div class=" mx-[8rem] flex h-full w-full items-center justify-evenly space-x-12 border-y border-gray-300">
-			<img class=" h-auto w-10 max-w-full object-contain" src={typescript} alt="behance" />
-			<img class=" h-auto w-11 max-w-full object-contain" src={js} alt="Google" />
-			<img class=" h-auto w-[4rem] max-w-full object-contain" src={mongodb} alt="apple" />
-			<img class=" h-auto w-[3rem] max-w-full object-contain" src={dotnet} alt="Dribble" />
-			<img class=" h-auto w-[3rem] object-contain" src={jupyter} alt="awwwarrds" />
-		</div>
-	</div>
 
+    <!-- Technology stack section -->
+    <div class="flex h-auto sm:h-20 py-6 sm:py-0">
+        <div class="mx-4 sm:mx-[4rem] lg:mx-[8rem] flex flex-wrap sm:flex-nowrap w-full items-center justify-center sm:justify-evenly gap-6 sm:gap-8 lg:gap-12 border-y border-gray-300 py-4 sm:py-0">
+            <img class="h-8 sm:h-10 w-auto object-contain" src={typescript} alt="TypeScript" />
+            <img class="h-8 sm:h-10 w-auto object-contain" src={js} alt="JavaScript" />
+            <img class="h-8 sm:h-12 w-auto object-contain" src={mongodb} alt="MongoDB" />
+            <img class="h-8 sm:h-10 w-auto object-contain" src={dotnet} alt=".NET Core" />
+            <img class="h-8 sm:h-10 w-auto object-contain" src={jupyter} alt="Jupyter" />
+        </div>
+    </div>
 </div>
