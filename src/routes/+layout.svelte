@@ -7,3 +7,6 @@
 
 <Navbar/>
 {@render children()}
+
+
+
