@@ -17,5 +17,5 @@
         <img src={CardData.image} alt="">
     </div>
     <a href={CardData.link} target="_blank"><p class="text-xl font-semibold text-[#FF64B4]"> {CardData.title}</p> </a>
-    <p class="text-lg w-[25rem] text-center">{CardData.text}</p>
+    <p class="text-md w-[25rem] text-center">{CardData.text}</p>
 </div>
